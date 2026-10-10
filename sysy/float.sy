@@ -1,0 +1,27 @@
+/* ============================================================
+ * Q2/Q3 程序二：浮点扩展（float.sy）
+ * ------------------------------------------------------------
+ * 参考 Mercycoffee 学长 float.c 思路：float 四则运算 + putfloat
+ * 覆盖：float 类型、fadd/fsub/fmul/fdiv、运行时库 putfloat/putch
+ *
+ * 测试用例（对拍）：
+ *   无输入 → 依次输出 fsum/fdiff/fmul/fdiv（每行一个）
+ *   ⚠️ 运行时库 putfloat 采用 %a（十六进制浮点）格式，
+ *      输出为 0x...p... 形式，非十进制
+ * ============================================================ */
+
+int main() {
+    float f1 = 3.14;
+    float f2 = 2.0;
+    float fsum  = f1 + f2;     /* fadd */
+    float fdiff = f1 - f2;     /* fsub */
+    float fmul  = f1 * f2;     /* fmul */
+    float fdiv  = f1 / f2;     /* fdiv */
+
+    putfloat(fsum);  putch(10);
+    putfloat(fdiff); putch(10);
+    putfloat(fmul);  putch(10);
+    putfloat(fdiv);  putch(10);
+
+    return 0;
+}

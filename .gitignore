@@ -1,0 +1,15 @@
+# 构建产物
+build/
+
+# 目标文件 / 静态库 / 动态库 / 位码
+*.o
+*.a
+*.so
+*.bc
+
+# 任务一脚本生成的中间产物
+task1/stage_2_ast.txt
+task1/stage_3_semantic.txt
+
+# 系统文件
+.DS_Store

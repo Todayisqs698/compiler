@@ -1,0 +1,10 @@
+# 统一行尾为 LF，避免 shell 脚本 / 汇编在 WSL/Linux 下因 CRLF 出错
+*.sh   text eol=lf
+*.S    text eol=lf
+*.sy   text eol=lf
+*.ll   text eol=lf
+*.mlir text eol=lf
+*.c    text eol=lf
+*.h    text eol=lf
+*.cpp  text eol=lf
+*.md   text eol=lf
